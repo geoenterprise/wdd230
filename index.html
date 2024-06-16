@@ -3,19 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Meaningful Title</title>
-    <meta name="description" content="description of page using keywords">
+    <title>Jovanny Rey - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development by Jovanny Rey. Welcome to the course assignment portal.">
     <meta name="author" content="Jovanny Rey">
-    <link rel="stylesheet" href="styles/filename">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="images/favicon.ico">
 </head>
 <body>
-    <header><h1>Welcome to WDD230 Web Project</h1></header>
+    <header>
+        <img id="profile_pic" src="images/MyProfilePic.jpg" alt="Geo Profile Picture" width="75" height="100">
+        <h1>Jovanny A. Rey Martinez</h1>
+    </header>
     <nav>
-        <a href="aboutme/index.html">About Me Page</a>
+        <ul>
+            <li><a href="/index.html" class="active">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
     </nav>
-    <main></main>
-    <footer>&copy; Jovanny Rey | BYU-Idaho | WDD 230 - Fall 2024</footer>
-    <script src="script/"></script>
+    <main>
+        <h1>WDD 230: Web Frontend Development</h1>
+        <div class="card">
+            <section>
+                <span>Learning Activities</span>
+                <lu>
+                    <li><a href="#">Learning Activities</a></li>
+                    <li><a href="#"></a>Learning Activities</li>
+                    <li><a href="#"></a>Learning Activities</li>   
+            </section>
+            <section>
+                <span>Information</span>
+            </section>
+        </div>
+    </main>
+    <footer>
+        &copy; <span id="year"></span> | Jovanny Rey | Colombia | <img src="images/colombian_flag.jpg" alt="Colombian Flag" width="40" height="40"><br>
+        <span id="last-modified"></span>
+        
+    </footer>
+    <script src="scripts/getDates.js"></script>
 </body>
 </html>

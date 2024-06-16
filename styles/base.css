@@ -1,0 +1,77 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+h1 {
+    font-size: 2rem;
+    font-weight: 100;
+}
+#profile_pic {
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.7);
+    padding: 1px;
+    margin-right: 10px;
+}
+header {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+header, main {
+    margin: 0 auto;
+}
+
+nav {
+    background-color: #90E0EF;
+    margin: 0 auto;
+}
+nav a {
+    display: block;
+    color: rgba(0,0,0,1);
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+nav ul {
+    list-style-type: none;
+}
+nav a:hover {
+    /* text-decoration: overline; */
+    background-color: rgba(0, 0, 0, 0.5);
+    /*To make it whiter background-color: rgba(255, 255, 255, 0.3); */
+}
+nav .active {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.card {
+    margin: 1rem 2rem;
+}
+.card section{
+    border: 1px solid blue;
+    background-color: #90E0EF;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1rem 0;
+}
+.card span {
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding: .75rem 0;
+}
+.card li{
+    padding: 10px;
+}
+footer {
+    text-align: center;
+}
