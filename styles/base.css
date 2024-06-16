@@ -62,12 +62,15 @@ nav .active {
     overflow: hidden;
     margin: 1rem 0;
 }
-.card span {
+.card h2 {
     background-color: rgba(0,0,0,0.5);
     color: #fff;
     display: block;
     text-align: center;
     padding: .75rem 0;
+}
+.card p {
+    padding: 10px;
 }
 .card li{
     padding: 10px;
