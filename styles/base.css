@@ -50,9 +50,6 @@ main.dark {
 main.dark h1 {
     color: white;
 }
-.card.dark {
-    box-decoration: shadow;
-}
 .card.dark section {
     border: 1px solid #333;
     background-color: #333;
