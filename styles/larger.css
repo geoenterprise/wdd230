@@ -17,4 +17,19 @@
         box-shadow: 1px 1px 10px #000;
         /* grid-template-columns: 2fr 1fr; */
     }
+    .card.dark section {
+        box-shadow: 1px 1px 5px #eee;
+    }
+    #menu {
+        display: none; /* hide hamburger button */
+    }
+    
+    .navigation {
+        flex-direction: row;
+    }
+    
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
 }
