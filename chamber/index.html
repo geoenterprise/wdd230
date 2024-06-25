@@ -6,17 +6,46 @@
     <title>Meaningful Title</title>
     <meta name="description" content="description of page using keywords">
     <meta name="author" content="Jovanny Rey">
-    <link rel="stylesheet" href="styles/filename">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.png">
     <meta property="og:title" content="WDD 230 - Web Frontend Development">
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="/wdd230/images/Villavicencio_city_view.jpg">
-    <meta property="og:url" content="https://geoenterprise.github.io/wdd230">
+    <meta property="og:image" content="images/Villavicencio_city_view.jpg">
+    <meta property="og:url" content="https://geoenterprise.github.io/wdd230/chamber/">
     <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
-    <header><h1>Page Title - Heading 1</h1></header>
-    <nav></nav>
-    <main></main>
+    <header><h1>The one stop for your local Gaming</h1></header>
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+    <div id="hero">
+        <div id="hero-box">
+            <!-- <img id="hero_text_banner-img" src="images/hero_text_banner.png" alt="text banner"> -->
+            <img id="hero-img" src="images/controlers.jpg" alt="controlers on table">
+        </div>
+        <section id="hero-msg">
+            <h1 class="home-title">Villavo Gaming Chamber</h1>
+            <h4>The one stop for your local Gaming</h4>
+            <div class="button-box1">
+                <a class="book" href="join.html">JOIN</a>
+            </div>
+        </section>
+    </div>
+    <main>
+        <section id="join">
+            <h2 class="join">Why Join</h2>
+            <img class="join-box" href="images/filename" alt="Alternative Description" loading="lazy" width="200" height="200">
+            <h2 class="join-alt">Benefits</h2>
+        </section>
+    </main>
     <footer>&copy; Jovanny Rey | BYU-Idaho | WDD 230 - Fall 2024</footer>
     <script src="scripts/"></script>
 </body>
