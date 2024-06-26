@@ -139,7 +139,7 @@ header {
   
   /* Caption text */
   .text {
-    color: #57CC99;
+    color: black;
     text-shadow: 0 0 10px #38A3A5;
     font-size: 60px;
     padding: 8px 12px;
