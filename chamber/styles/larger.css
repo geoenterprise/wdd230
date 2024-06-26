@@ -1,15 +1,44 @@
 @media screen and (min-width: 600px) {
 
     #menu {
-        display: none; /* hide hamburger button */
+        display: none; /*hide hamburger button */
     }
-
+    
+    nav ul {
+        display: flex;
+    }
+    nav ul li{
+        flex: 1 1 100%;
+    }
     .navigation {
         flex-direction: row;
     }
-
     .navigation a {
         display: block;
         flex: 1 1 100%;
+    }
+    main {
+        grid-template-columns: 2fr 1fr;
+    }
+    .card {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 10px;
+    }
+    .card section {
+        box-shadow: 1px 1px 10px #000;
+        /* grid-template-columns: 2fr 1fr; */
+    }
+    .card2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 10px;
+    }
+    .card2 section {
+        box-shadow: 1px 1px 10px #000;
+        /* grid-template-columns: 2fr 1fr; */
+    }
+    .card.dark section {
+        box-shadow: 1px 1px 5px #eee;
     }
 }
