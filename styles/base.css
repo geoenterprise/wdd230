@@ -16,9 +16,21 @@ main h1 {
     padding: 20px 20px 0px 30px;
     text-decoration-line: underline;
 }
+.hero {
+    position: relative;
+}
 .hero img {
     width: 100%;
     height: auto;
+    display: block;
+}
+.hero span {
+    position: absolute;
+    left: 10;
+    top: 10;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 1rem;
+    text-align: center;
 }
 #profile_pic {
     box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.7);
@@ -156,6 +168,11 @@ nav .active {
 }
 .card li{
     padding: 10px;
+}
+#visit-count {
+	color: navy;
+	font-weight: bolder;
+	font-size: larger;
 }
 footer {
     background-color: #000;

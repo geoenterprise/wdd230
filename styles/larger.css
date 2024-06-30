@@ -8,6 +8,9 @@
     main {
         grid-template-columns: 2fr 1fr;
     }
+    .hero span {
+        font-size: 2rem;
+    }
     .card {
         display: grid;
         grid-template-columns: 2fr 1fr;
