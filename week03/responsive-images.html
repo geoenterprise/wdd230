@@ -6,13 +6,24 @@
     <title>Responsive Image</title>
     <meta name="description" content="description of page using keywords">
     <meta name="author" content="Jovanny Rey">
-    <link rel="stylesheet" href="styles/filename">
+    <link rel="stylesheet" href="styles/responsive-images.css">
 </head>
 <body>
-    <header><h1>Page Title - Heading 1</h1></header>
+    <header><h1>Responsive Images: srcset</h1></header>
     <nav></nav>
-    <main></main>
-    <footer>&copy; Jovanny Rey | BYU-Idaho | WDD 230 - Fall 2024</footer>
-    <script src="scripts/"></script>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/hero-small.webp">
+                <source media="(max-width: 1000px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-large.webp" alt="table setting" width="1500" height="750">
+            </picture>
+        </div>
+    </main>
+    <footer>
+        &copy; <span id="year"></span> Jovanny Rey | BYU-Idaho | WDD 230 - Fall 2024 <br>
+        <span id="last-modified"></span>
+    </footer>
+    <script src="scripts/getDate.js"></script>
 </body>
 </html>
