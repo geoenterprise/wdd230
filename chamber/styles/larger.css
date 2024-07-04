@@ -44,4 +44,36 @@
     .card.dark section {
         box-shadow: 1px 1px 5px #eee;
     }
+    .sidebars {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+    }
+    .sidebars section {
+        box-shadow: 1px 1px 10px #000;
+        /* grid-template-columns: 2fr 1fr; */
+    }
+    
+    /* .responsive-image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    } */
+    .feed img:hover {
+        border-radius: 15px 150px;
+    }
+
+}
+@media screen and (min-width: 1000px) {
+    .sidebars {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 10px;
+    }
+    .feed-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* column-gap: 10px; */
+    }
+    
 }

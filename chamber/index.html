@@ -25,7 +25,7 @@
         <button id="menu"></button>
         <ul class="navigation">
             <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="#">About us</a></li>
+            <li><a href="discover.html">Discover</a></li>
             <li><a href="/week01/chamber-site-plan.html">Site Plan</a></li>
             <li><a href="#">Form</a></li>
             <li><a href="/index.html">Back Home</a></li>
@@ -36,20 +36,20 @@
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
           <!-- <div class="numbertext">1 / 3</div> -->
-          <img class="hero2" src="images/controlers.jpg" alt="controler2" style="width:100%">
-          <div class="text">Gatherings</div>
+          <img class="hero2" src="images/hero_invite.jpg" alt="invite" style="width:100%">
+          <!-- <div class="text">Gatherings</div> -->
         </div>
       
         <div class="mySlides fade">
           <!-- <div class="numbertext">2 / 3</div> -->
           <img class="hero3" src="images/controler.jpg" alt="Controler2" style="width:100%">
-          <div class="text">Full control</div>
+          <!-- <div class="text">Full control</div> -->
         </div>
       
         <div class="mySlides fade">
           <!-- <div class="numbertext">3 / 3</div> -->
           <img class="hero4" src="images/controlers.jpg" alt="controler3" style="width:100%">
-          <div class="text">What's this?</div>
+          <!-- <div class="text">What's this?</div> -->
         </div>
       
         <!-- Next and previous buttons -->
@@ -106,7 +106,9 @@
             </section>
         </div>
     </main>
-    <footer>&copy; Jovanny Rey | BYU-Idaho | WDD 230 - Fall 2024</footer>
+    <footer>&copy; <span id="year"></span> | Jovanny Rey | Colombia | <img src="images/colombian_flag.jpg" alt="Colombian Flag" loading="lazy" width="40" height="40"><br>
+        <span id="last-modified"></span></footer>
+    <script src="scripts/getDates.js"></script>
     <script src="scripts/slideshow.js"></script>
     <script src="scripts/HamMenu.js"></script>
 </body>
