@@ -264,6 +264,13 @@ End SlideShow
     overflow: hidden;
     margin: 1rem 0;
 }
+.sidebars h1 {
+    background-color: #05283f;
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding: .75rem 0;
+}
 .sidebars h2 {
     background-color: #05283f;
     color: #fff;
