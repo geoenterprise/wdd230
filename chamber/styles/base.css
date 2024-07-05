@@ -3,6 +3,13 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+/* :root {
+    background-color: #333;
+} */
+::selection {
+    color: rgb(10, 4, 43);
+    background: rgb(248, 248, 113);
+}
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -280,6 +287,7 @@ End SlideShow
 }
 .sidebars p {
     padding: 10px;
+    margin-top: 1rem;
 }
 .sidebars li {
     padding: 10px;
