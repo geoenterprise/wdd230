@@ -15,13 +15,14 @@
 
 
 <!-- STYLE SHEETS -->
-<link href="css/normalize.css" rel="stylesheet">
+<link href="styles/normalize.css" rel="stylesheet">
 <!-- phone-default -->
-<link href="css/small.css" rel="stylesheet">
+<link href="styles/small.css" rel="stylesheet">
 <!-- enhance-tablet -->
-<link href="css/medium.css" rel="stylesheet">
+<link href="styles/medium.css" rel="stylesheet">
 <!-- enhance-desktop -->
-<link href="css/large.css" rel="stylesheet">
+<link href="styles/large.css" rel="stylesheet">
+<link href="styles/base.css" rel="stylesheet">
 
 
      
@@ -36,9 +37,10 @@
     
 <!-- NAVIGATION HERE -->
     <nav>
-        <ul>
+        <button id="menu"></button>
+        <ul class="navigation">
             <li><a href="#">About</a></li>
-            <li class="active"><a href="#">Propose</a></li>
+            <li><a href="#" class="active">Propose</a></li>
             <li><a href="#">Winners</a></li>
             <li><a href="#">Contact</a></li>    
         </ul>
@@ -65,10 +67,11 @@
                 <label><input type="radio" name="audience" value="advanced"> Advanced</label>
 
                 <div>Software Needed</div>
-                <label><input type="checkbox" name="editing" value="yes"> Photo Editing</label>
                 <label><input type="checkbox" name="code" value="yes"> Coding</label>
-                <label><input type="checkbox" name="editing" value="yes"> Preprocesor</label>
                 <label><input type="checkbox" name="editing" value="yes"> FTp Client</label>
+                <label><input type="checkbox" name="editing" value="yes"> Photo Editing</label>
+                <label><input type="checkbox" name="editing" value="yes"> Preprocesor</label>
+                
 
             </fieldset>
             <fieldset>
@@ -76,7 +79,7 @@
                 <label>Anticipated Completion Date <input type="date" name="completeDate"></label>
                 <label>Course Subject
                     <select name="subject">
-                        <option value="">Please Select</option>
+                        <option value="">Please Select &#9662;</option>
                     <option value="software">Software Development</option>
                     <option value="creative">Creative Professional</option>
                     <option value="info">Information Technology</option>
@@ -98,11 +101,15 @@
           
         
     </main>
-    
-<!-- FOOTER HERE -->   
+        
+    <!-- FOOTER HERE -->   
     <footer>
-        &copy; 2024 &bull; Paul Cheney &bull; 123-555-6789
+        &copy; <span id="year"></span> | Jovanny Rey | Colombia <br>
+        <span id="last-modified"></span>
+        
     </footer>
-<script src="js/scripts.js"></script>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburguerMenu.js"></script>
+    <script src="scripts/dark.js"></script>
 </body>
 </html>

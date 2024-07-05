@@ -12,7 +12,56 @@
 body {
 	font-family: "EB Garamond", Arial, serif;
 }
+/* small view navigation */
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: hsl(180, 4%, 11%);
+    color: #eee;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+#menu::before {
+    content: "☰";
+}
 
+#menu.open::before {
+    content: "⭐";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: #333;
+    color: #fff;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+.navigation a:hover {
+    background-color: #bbb;
+    color: #333;
+    font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+    display: block;
+}
+
+.active::before {
+    content: "📍";  /* just a wayfinding symbol for the user */
+}
 table {
 	margin: 10px auto;
 	border: thin solid var(--border);
@@ -49,6 +98,7 @@ td {
 tbody tr:nth-child(odd) {
 	background-color: var(--zebra);
 }
+
 footer {
     background-color: #000;
     color: #fff;
