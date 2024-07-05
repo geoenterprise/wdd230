@@ -18,7 +18,18 @@
     nav ul li {border: none;}
     nav ul li a{padding: .5rem 2rem;}
     nav ul li a:hover {background-color: firebrick;}
-
+    #menu {
+        display: none; /* hide hamburger button */
+    }
+    
+    .navigation {
+        flex-direction: row;
+    }
+    
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
 
 /*----------- MAIN --------------*/
 

@@ -3,6 +3,16 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+:root {
+	--back: hsla(150, 50%, 30%, 1);
+    --back2: hsla(150, 50%, 30%, .5);
+    --foredark: hsla(0,0%,10%,1);
+	--forelight: hsla(0,0%,100%,1);
+	--border: hsla(0,0%,20%,.8);
+	--borderlight: hsla(0,0%,33%,.3);
+	--shadow: hsl(0,0%,50%);
+	--zebra: hsl(0, 0%, 93%, 1);
+}
 
 body {
     font-family: "Roboto", sans-serif;
@@ -181,98 +191,6 @@ iframe {
     width: 100%;
     height: auto;
 }
-input[type=text], input[type=range], input[type=radio] {
-	margin: 1rem;
-	padding: 0.5em;
-}
-#rating {
-	width: 180px;
-	margin-bottom: 0;
-}
-#rangevalue {
-	font-size: 2rem;
-	color: navy;
-}
-label {
-	display: block;
-	font-weight: 700;
-}
-#rangevalues {
-	display: flex;
-	margin: 0 0 0 25px;
-	width: 200px;
-}
-
-#rangevalues option {
-	flex: 1 1 auto;
-}
-#feedback {
-    color: red;
-}
-
-/* -----------Form Styling ------------- */
-.wf1 fieldset {
-    margin: 2rem 0;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    padding: 0.5em 2%;
-}
-.wf1 legend {
-    color: #445ba9;
-    padding: 0 .5rem;
-}
-.wf1 label{
-    display: block;
-    padding-top: 1rem;
-    color: #9c2c13;
-    font-size: .9rem;
-}
-.wf1 div {
-    padding-top: 1rem;
-    color: #445ba9;
-    font-size: .9rem;
-}
-.wf1 input[type="text"], 
-.wf1 input[type="tel"],
-.wf1 input[type="email"],
-.wf1 input[type="url"],
-.wf1 input[type="date"],
-.wf1 select,
-.wf1 input[type="number"] {
-    background-color: #eee;
-    display: block;
-    border: solid 1px #999;
-    border-radius: 6px;
-    padding: 0.75rem;
-    color: #555;
-    width: 100%;
-    max-width: 400px;
-    appearance: none;
-}
-
-.wf1 input[type="radio"],
-.wf1 input[type="checkbox"]{
-    margin-right: 6px;
-}
-
-.wf1 input[type="submit"]{
-    border: none;
-    background-image: linear-gradient(#9c2c13, #6f200e);
-    color: #fff;
-    border-radius: 6px;
-    padding: 0.8rem;
-    width: 96%;
-    max-width: 400px;
-    margin: -1rem 2% 2rem 2%;
-    box-shadow: 1px 1px 4px #999;
-}
-.wf1 input:required {
-    border-right: solid 8px red;
-}
-.wf1 input:required:valid {
-    border-right: solid 8px green;
-}
-
 footer {
     background-color: #000;
     color: #fff;

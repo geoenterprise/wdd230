@@ -12,10 +12,11 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="styles/larger.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles/form.css" media="print" onload="this.media='all'">
     <noscript>
         <link rel="stylesheet" href="styles/base.css">
         <link rel="stylesheet" href="styles/larger.css">
-        <link rel="stylesheet" href="styles/form.css">
+        
     </noscript>
     <link rel="icon" href="images/favicon.png">
     <meta property="og:title" content="WDD 230 - Web Frontend Development">
@@ -40,12 +41,12 @@
         </ul>
     </nav>
     <main>   
-        <form method="get" action="thanks.html" class="wf1">
+        <form method="get" action="record.html" class="wf1">
             <fieldset>
                 <legend>Applicant Information</legend>
                 <label>Username*<input type="text" name="username" id= "username" required></label>
-                <label>Password*<input type="text" pattern="[a-zA-Z\s0-9]{8,}" title="PLease use at least 8 character" name="password1" id="password1" required></label>
-                <label>Password Repeat*<input type="text" pattern="[a-zA-Z\s0-9]{8,}" title="PLease use at least 8 character" name="password2" id="password2" required></label>
+                <label>Password*<input type="password" pattern="[a-zA-Z\s0-9]{8,}" title="PLease use at least 8 character" name="password1" id="password1" required></label>
+                <label>Password Repeat*<input type="password" pattern="[a-zA-Z\s0-9]{8,}" title="PLease use at least 8 character" name="password2" id="password2" required></label>
                 <label>Email*<input type="email" title="Please enter a valid email address" name="email" id="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" placeholder="someone@gmail.com" required></label>
                 <label for="rating">Page Rating</label>
                 <div id="rangevalue"></div>
@@ -64,6 +65,7 @@
                 </datalist>
                 
             </fieldset>
+            <input type="submit" value="Complete My Application">
         </form>
         <div id="feedback"></div>
     </main>
