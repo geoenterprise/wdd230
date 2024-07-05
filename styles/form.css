@@ -51,6 +51,7 @@
 .wf1 input[type="email"],
 .wf1 input[type="url"],
 .wf1 input[type="date"],
+.wf1 input[type="password"]
 .wf1 select,
 .wf1 input[type="range"]
 .wf1 input[type="number"] {
