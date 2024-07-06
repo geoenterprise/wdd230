@@ -39,12 +39,6 @@ header {
 #menu.open::before {
     content: "⭐";
 }
-#hero-msg {
-    margin-top: -550px;
-    font-size: 3em;
-    padding: 1%;
-    width: 100%;
-}
 #hero-msg h4{
     color: #90E0EF;
     text-shadow: 5px 5px 10px black;
@@ -201,7 +195,7 @@ to {opacity: 1}
 /* -------------------------------------
 End SlideShow
 ---------------------------------------- */
-#join {
+/* #join {
     display: grid;
     grid-column: 1/4;
 }
@@ -213,7 +207,7 @@ End SlideShow
 }
 .join-alt {
     grid-column: 3/4;
-}
+} */
 
 .card {
     margin: 1rem 2rem;
@@ -317,6 +311,127 @@ End SlideShow
 #visit-message {
     padding: 10px;
 }
+/* ----------------------------------------- */
+/* ------------ Form Styling ---------------*/
+/* ---------------------------------------- */
+.join fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0.5em 2%;
+}
+.join legend{
+    color: #445ba9;
+    padding: 0 .5rem;
+}
+.join label{
+    display: block;
+    padding-top: 1rem;
+    color: #22577A;
+    font-size: .9rem;
+    font-weight: 700;
+}
+.join li {
+    display: block;
+    padding-top: 1rem;
+    color: #22577A;
+    font-size: .9rem;
+    font-weight: 700;
+}
+.join div {
+    padding-top: 1rem;
+    color: #445ba9;
+    font-size: .9rem;
+}
+.join input[type="text"], 
+.join input[type="tel"],
+.join input[type="email"],
+.join input[type="url"],
+.join input[type="date"],
+.join input[type="password"],
+.join select,
+.join input[type="range"]
+.join input[type="number"] {
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: 0.75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.join input[type="radio"],
+.join input[type="checkbox"]{
+    margin-right: 6px;
+}
+
+.join input[type="submit"]{
+    border: none;
+    background-image: linear-gradient(#367caa, #22577A);
+    color: #EEE;
+    border-radius: 6px;
+    padding: 0.8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.join input:required {
+    border-right: solid 8px red;
+}
+.join input:required:valid {
+    border-right: solid 8px green;
+}
+.join input:focus {
+    border: #C7F9CC;
+    border-radius: 6px;
+}
+.thank-you-title {
+    padding: 30px;
+}
+#message {
+    padding: 30px;
+    font-size: 1.5rem;
+}
+.tick-mark-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border: none;
+    border-radius: 6px;
+    padding: 0.8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: -1rem 2% 2rem 2%;
+}
+.benefits {
+    margin: 1rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0.5em 2%;
+    max-width: 400px;
+}
+.benefitslist::before {
+    content: '👍';
+    padding: 10px;
+}
+.price {
+    font-weight: bold;
+    color: #007BFF;
+    font-size: 2rem;
+    padding-left: 30px;
+}
+#benefits h1 {
+    color: #445ba9;
+    /* font-size: .3rem; */
+    padding: 0 .5rem;
+}
+/* --------End Form Styling ---------*/
 footer {
     background-color: #000;
     color: #fff;

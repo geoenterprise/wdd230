@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Join</title>
+    <meta name="description" content="Membership Application Form">
+    <meta name="author" content="Jovanny Rey">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.png">
+    <meta property="og:title" content="Membership Application Form">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/Villavicencio_city_view.jpg">
+    <meta property="og:url" content="https://geoenterprise.github.io/wdd230/chamber/">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/chamber_logo.png" alt="Chamber Logo" width="60" height="60">
+        </a>
+    </header>
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="/week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/join.html" class="active">Join</a></li>
+            <li><a href="/wdd230/index.html">Back Home</a></li>
+        </ul>
+    </nav>
+        
+    <main>
+        <form method="get" action="thankyou.html" class="join">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label>First Name* <input type="text" name="fname" id= "fname" required></label>
+                <label>Last Name* <input type="text" name="lname" id= "lname" required></label>
+                <label>Title/Position <input type="text" title="Please enter a minimum of seven characters, including letters, hyphens, and spaces only" name="position" id="position" pattern="[a-zA-Z\s-]{7,}" required></label>
+                <label>Email* <input type="email" title="Please enter a valid email address" name="email" id="email" pattern="[a-zA-Z0-9._%+-]" placeholder="someone@gmail.com" required></label>
+                <label>Phone* <input type="tel" name="phone" id="phone" placeholder="1235551234" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Business Information</legend>
+                <label>Business/Organization's Name* <input type="text" name="bname" id="bname" required></label>
+                <label>Organization's Description <input type="text" name="bdescription" id= "bdescription"></label>
+                <input type="hidden" id="timestamp" name="timestamp">
+            </fieldset>
+            
+            <fieldset>
+                <legend>Membership</legend>
+                <div id="membership">
+                    <div id="memlevel">Membership Level
+                        <label><input type="radio" name="membership" value="NP"> NP Membership</label>
+                        <label><input type="radio" name="membership" value="Bronze"> Bronze Membership</label>
+                        <label><input type="radio" name="membership" value="Silver"> Silver Membership</label>
+                        <label><input type="radio" name="membership" value="Gold"> Gold Membership</label>
+                    </div>
+                    <div id="benefits">Membership Benefits
+                        <ul>
+                            <li class="benefits">
+                                <h1><strong>NP Membership:</strong> For non-profit organizations. No fee.</h1>
+                                <ul>
+                                    <li class="benefitslist">Access to all free events</li>
+                                    <li class="benefitslist">Basic training sessions</li>
+                                </ul>
+                                <span class="price">Free</span>
+                            </li>
+                            <li class="benefits">
+                                <h1><strong>Bronze Membership:</strong></h1>
+                                <ul>
+                                    <li class="benefitslist">Access to special events</li>
+                                    <li class="benefitslist">Basic training sessions</li>
+                                    <li class="benefitslist">Advertising options (basic placement)</li>
+                                    <li class="benefitslist">5% event discounts</li>
+                                </ul>
+                                <span class="price">$50/year</span>
+                            </li>
+                            <li class="benefits">
+                                <h1><strong>Silver Membership:</strong></h1> 
+                                <ul>
+                                    <li class="benefitslist">All Bronze benefits</li>
+                                    <li class="benefitslist">Advanced training sessions</li>
+                                    <li class="benefitslist">Priority advertising (better placement)</li>
+                                    <li class="benefitslist">10% event discounts</li>
+                                </ul>
+                                <span class="price">$100/year</span>
+                            </li>
+                            <li class="benefits">
+                                <h1><strong>Gold Membership:</strong></h1>
+                                <ul>
+                                    <li class="benefitslist">All Silver benefits</li>
+                                    <li class="benefitslist">Exclusive events</li>
+                                    <li class="benefitslist">Premium training sessions</li>
+                                    <li class="benefitslist">Top-tier advertising (best placement)</li>
+                                    <li class="benefitslist">15% event discounts</li>
+                                </ul>
+                                <span class="price">$200/year</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </fieldset>
+            <input type="submit" value="Complete My Membership">
+        </form>
+    </main>
+    <footer>&copy; <span id="year"></span> | Jovanny Rey | Colombia | <img src="images/colombian_flag.jpg" alt="Colombian Flag" loading="lazy" width="40" height="40"><br>
+        <span id="last-modified"></span></footer>
+    <script src="scripts/getDates.js"></script> 
+    <script src="scripts/HamMenu.js"></script>
+    <script src="scripts/formvalidation.js"></script>
+</body>
+</html>

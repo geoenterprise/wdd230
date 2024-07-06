@@ -1,18 +1,19 @@
 @media screen and (min-width: 600px) {
 
-    #menu {
-        display: none; /*hide hamburger button */
-    }
-    
     nav ul {
         display: flex;
     }
     nav ul li{
         flex: 1 1 100%;
     }
+    #menu {
+        display: none; /* hide hamburger button */
+    }
+    
     .navigation {
         flex-direction: row;
     }
+    
     .navigation a {
         display: block;
         flex: 1 1 100%;
@@ -62,7 +63,28 @@
     .feed img:hover {
         border-radius: 15px 150px;
     }
+    #membership {
+        display: flex;
+    }
+    #memlevel {
+        flex: 1;
+    }
+    #benefits {
+        flex: 1;
+    }
+    .join {
+        margin-right: 0; /* Remove margin to prevent extra space */
+    }
+    .price {
+        font-size: 2.5rem;
+        margin-top: 10px;
+    }
 
+    .benefitslist {
+        list-style-type: disc;
+        margin-left: 20px;
+        margin-bottom: 5px;
+    }
 }
 @media screen and (min-width: 1000px) {
     .sidebars {
