@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Join</title>
+    <meta name="description" content="Membership Application Form">
+    <meta name="author" content="Jovanny Rey">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.png">
+    <meta property="og:title" content="Membership Application Form">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/Villavicencio_city_view.jpg">
+    <meta property="og:url" content="https://geoenterprise.github.io/wdd230/chamber/">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/chamber_logo.png" alt="Chamber Logo" width="60" height="60">
+        </a>
+    </header>
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="/week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/join.html" class="active">Join</a></li>
+            <li><a href="/wdd230/index.html">Back Home</a></li>
+        </ul>
+    </nav>
+        
+    <main>
+        <form class="weatherForm">
+            <input type="text" class="cityInput" placeholder="Enter city">
+            <button class="weatherButton" type="submit">Get Weather</button>
+        </form>
+        
+        <div class="weatherCard">
+            <h1 class="cityDisplay">City Name</h1>
+            <p class="tempDisplay">Temp</p>
+            <p class="humidity">Humidity</p>
+            <p class="descDisplay">Description</p>
+            <p class="weatherEmoji">🌤</p>
+            <p class="errorDisplay" style="display: none;">Please enter a city</p>
+        </div>
+    </main>
+    <footer>&copy; <span id="year"></span> | Jovanny Rey | Colombia | <img src="images/colombian_flag.jpg" alt="Colombian Flag" loading="lazy" width="40" height="40"><br>
+        <span id="last-modified"></span></footer>
+    <script src="scripts/weatherapp.js"></script>
+    <script src="scripts/getDates.js"></script> 
+    <script src="scripts/HamMenu.js"></script>
+</body>
+</html>

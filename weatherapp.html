@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Weather App</title>
+    <meta name="description" content="Search the weather of your city">
+    <meta name="author" content="Jovanny Rey">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles/larger.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles/form.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        
+    </noscript>
+    <link rel="icon" href="images/favicon.png">
+    <meta property="og:title" content="WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/wdd230/images/Villavicencio_city_view.jpg">
+    <meta property="og:url" content="https://geoenterprise.github.io/wdd230">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+    <header>
+        <img id="profile_pic" src="images/MyProfilePic.jpg" alt="Geo Profile Picture" width="75" height="100">
+        <h1>Jovanny A. Rey Martinez</h1>
+        <img src="images/dark-theme-button.svg" alt="Dark mode" id="darkBtn">
+    </header>
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="/wdd230/index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="form.html" class="active">Form</a></li>
+        </ul>
+    </nav>
+    <main>   
+        <form class="weatherForm">
+            <input type="text" class="cityInput" placeholder="Enter city">
+            <button class="weatherButton" type="submit">Get Weather</button>
+        </form>
+        
+        <div class="weatherCard">
+            <h1 class="cityDisplay">City Name</h1>
+            <p class="tempDisplay">Temp</p>
+            <p class="humidity">Humidity</p>
+            <p class="descDisplay">Description</p>
+            <p class="weatherEmoji">🌤</p>
+            <p class="errorDisplay" style="display: none;">Please enter a city</p>
+        </div>
+    </main>
+    <footer>
+        &copy; <span id="year"></span> | Jovanny Rey | Colombia | 
+        <span id="last-modified"></span>
+        
+    </footer>
+    <script src="scripts/weatherapp.js"></script>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburguerMenu.js"></script>
+    <script src="scripts/dark.js"></script>
+</body>
+</html>
