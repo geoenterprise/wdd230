@@ -1,0 +1,53 @@
+[
+    {
+        "familyName": "Rey Criollo",
+        "dateMoved": "2017-06-15",
+        "numberFamilyMembers": 3,
+        "visitedByBishopric": true,
+        "familyMembers": [
+            {
+                "name": "Ana Criollo",
+                "gender": "Female",
+                "birthdate": "1990-06-04"
+            },
+        
+            {
+                "name": "David Rey Criollo",
+                "gender": "Male",
+                "birthdate": "2012-10-05"
+            },
+
+            {
+                "name": "Valery Rey Criollo",
+                "gender": "Female",
+                "birthdate": "2010-06-15"
+            }
+        ]
+    },
+    {
+        "familyName": "Rodriguez",
+        "dateMoved": "2010-03-10",
+        "numberFamilyMembers": 4,
+        "visitedByBishopric": true,
+        "familyMembers": [
+            {
+                "name": "Pepito Rodriguez",
+                "gender": "Male",
+                "birthdate": "1992-05-05"
+            },
+        
+            {
+                "name": "Simon Rodriguez",
+                "gender": "Male",
+                "birthdate": "2001-11-30"
+            },
+
+            {
+                "name": "Maria Rodriguez",
+                "gender": "Female",
+                "birthdate": "2014-08-19"
+            }
+        ]
+
+    }
+]
