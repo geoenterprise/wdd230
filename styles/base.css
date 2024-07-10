@@ -234,7 +234,8 @@ iframe {
     flex-direction: column;
     align-items: center;
 }
-h1 {
+/* These h1 and p need to be called by it's id or class
+/* h1 {
     font-size: 3.5rem;
     margin-top: 0;
     margin-bottom: 25px;
@@ -242,7 +243,7 @@ h1 {
 p {
     font-size: 1.5rem;
     margin: 5px 0;
-}
+} */
 .cityDisplay {
     font-size: 3.5rem;
     font-weight: bold;
