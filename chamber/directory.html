@@ -66,40 +66,17 @@
     </div>
     <br>
     <main>
-        
-        <div class="card">
-            <section>
-                <h2>Events</h2>
-                <ul>
-                    <li>Where exactly can you see such a gaming countryside world?<a href="#">Read More</a></li>
-                    <li>Meet with our members<a href="#">Read More</a></li>
-                </ul>
-            </section>
-            <section>
-                <h2>Weather</h2>
-                <p>Weather: <span id="weather-info">Loading...</span></p>
-                <p>Number of visits: <span id="visit-count">Loading...</span></p>
-            </section>
+        <div class="view-toggle">
+            <button id="grid">Grid View</button>
+            <button id="list">List View</button>
         </div>
-        <div class="card2">
-            <section>
-                <h2>First Company</h2>
-                <p>Our main member</p>
-            </section>
-            <section>
-                <h2>Second Company</h2>
-                <p>Our main member</p>
-            </section>
-            <section>
-                <h2>Third Company</h2>
-                <p>Our main member</p>
-            </section>
-        </div>
+        <div id="businessCards" class="grid"></div>
     </main>
     <footer>&copy; <span id="year"></span> | Jovanny Rey | Colombia | <img src="images/colombian_flag.jpg" alt="Colombian Flag" loading="lazy" width="40" height="40"><br>
         <span id="last-modified"></span></footer>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/slideshow.js"></script>
     <script src="scripts/HamMenu.js"></script>
+    <script src="scripts/members.js"></script>
 </body>
 </html>

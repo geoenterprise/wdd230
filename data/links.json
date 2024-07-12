@@ -1,0 +1,97 @@
+{
+    "weeks": [
+      {
+        "week": "Week 1",
+        "links": [
+          {
+            "url":"week01/holygrail.html",
+            "title":"HG Layout"
+          },
+          {
+            "url":"week01/media-query.html",
+            "title":"mQueries"
+          }
+        ]        
+      },
+      {
+        "week": "Week 2",
+        "links": [
+          {
+            "url":"week02/design",
+            "title":"Design"
+          },
+          {
+            "url":"https://codepen.io/Geo-Teacher-Geo-Rey/pen/MWdQMaV",
+            "title":"Hamburger Menu"
+          },
+          {
+            "url":"week02/bom.html",
+            "title":"Bom"
+          }
+        ]
+      },
+      {
+        "week": "Week 3",
+        "links": [
+          {
+            "url":"week03/images/landscape.webp",
+            "title":"WebP"
+          },
+          {
+            "url":"week03/lazyload.html",
+            "title":"LazyLoad"
+          },
+          {
+            "url":"week03/responsive-images.html",
+            "title":"Responsive Images"
+          },
+          {
+            "url":"week03/bom.html",
+            "title":"localStorage"
+          }
+        ]
+      },
+      {
+        "week": "Week 4",
+        "links": [
+          {
+            "url":"https://codepen.io/Geo-Teacher-Geo-Rey/pen/KKjPvPz",
+            "title":"CSS Pseudo-Classes"
+          },
+          {
+            "url":"week04/images/combinators.webp",
+            "title":"CSS Combinators"
+          },
+          {
+            "url":"week04/tablebuild.html",
+            "title":"HTML Tables"
+          },
+          {
+            "url":"week04/index.html",
+            "title":"Web Form"
+          }
+        ]
+      },
+      {
+        "week": "Week 5",
+        "links": [
+          {
+            "url":"https://codepen.io/Geo-Teacher-Geo-Rey/pen/MWMWZay",
+            "title":"Pseudo-elements"
+          },
+          {
+            "url":"week05/new-ward-members.json",
+            "title":"JSON"
+          },
+          {
+            "url":"week05/prophets.html",
+            "title":"Fetch API"
+          },
+          {
+            "url":"week05/weather.html",
+            "title":"Weather API Wow"
+          }
+        ]
+      }
+    ]
+}

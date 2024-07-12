@@ -428,8 +428,15 @@ End SlideShow
 }
 #benefits h1 {
     color: #445ba9;
-    /* font-size: .3rem; */
+    font-size: 2rem;
     padding: 0 .5rem;
+    text-shadow: 0 0 5px #38A3A5;
+}
+#benefits h2 {
+    color: black;
+    font-size: 1.3rem;
+    padding: 0 .5rem;
+    max-width: 330px;
 }
 /* --------End Form Styling ---------*/
 /* ---------------------------------*/
@@ -449,7 +456,7 @@ End SlideShow
     padding: 10px;
     font-size: 2rem;
     font-weight: bold;
-    border: 2px solid hlsa(0, 0%, 20%, 0.3);
+    border: 2px solid hsla(0, 0%, 20%, 0.3);
     border-radius: 10px;
     margin: 10px;
     width: 300px
@@ -471,7 +478,7 @@ End SlideShow
     background: linear-gradient(180deg, hsl(210, 100%, 75%), hsl(40, 100%, 75%));
     padding: 50px;
     border-radius: 10px;
-    box-shadow: 2px 2px 5px hlsa(0, 0%, 0%, 0.5);
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.5);
     min-width: 300px;
     display: flex;
     flex-direction: column;
@@ -513,7 +520,68 @@ p {
 
 /* --------End Weather App ---------*/
 /* ---------------------------------*/
+/*-----------BusinessCard--------------*/
+/*-------------------------------------*/
 
+.view-toggle {
+    text-align: center;
+    margin-bottom: 20px;
+}
+#grid::before {
+    content: '🧮';
+}
+#list::before {
+    content: '📜';
+}
+#businessCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+#businessCards.grid .card {
+    flex: 1 1 calc(33.333% - 40px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+#businessCards.list .card {
+    flex: 1 1 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+/* .card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    margin: 10px 0;
+}
+
+.card p,
+.card a {
+    margin: 5px 0;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+} */
+
+
+
+
+/*-----------End BusinessCard----------*/
+/*-------------------------------------*/
 footer {
     background-color: #000;
     color: #fff;
