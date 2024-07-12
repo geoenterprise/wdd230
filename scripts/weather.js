@@ -1,4 +1,4 @@
-const currentTemp = document.querySelector('##weather-info');
+const currentTemp = document.querySelector('#weather-info');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 const apiKey = "3dd3a034ad96bb287cb4ff6817aaedb8";
@@ -26,10 +26,11 @@ async function apiFetch() {
 apiFetch();
 
 function displayResults(data) {
-    currentTemp.innerHTML = `The current Temperature is ${data.main.temp}&deg;F`;
+    
+    
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-    let desc = data.weather[0].description;
-    weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', desc);
-    captionDesc.textContent = `${desc.charAt(0).toUpperCase() + desc.slice(1)}`;
+    let desc = data.weather[0].description;    
+    // weatherIcon.setAttribute('src', iconsrc);
+    // weatherIcon.setAttribute('alt', desc);
+    currentTemp.innerHTML = `<img src="${iconsrc}" alt="${desc}">${data.main.temp}&deg;F - ${desc.charAt(0).toUpperCase() + desc.slice(1)}`;
 }

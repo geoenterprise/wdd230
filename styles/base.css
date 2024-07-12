@@ -268,7 +268,23 @@ p {
     font-weight: bold;
     color: hsla(0, 0%, 0%, 0.75);
 }
+/* ---------weather small index------*/
 
+
+#weather-info {
+    font-size: 1rem;
+    font-weight: 600;
+    color: navy;
+}
+figure {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+figure img{
+    vertical-align: middle;
+}
 /* -------------End Weather App -----------*/
 footer {
     background-color: #000;
