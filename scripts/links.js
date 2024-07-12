@@ -22,6 +22,8 @@ async function getLinks(){
 
 
 function displayLinks(data) {
+
+    card.innerHTML = "";
     const section = document.querySelector(".card");
     const list = section.querySelector("ul");
 
