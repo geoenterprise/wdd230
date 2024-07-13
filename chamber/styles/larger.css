@@ -85,6 +85,12 @@
         margin-left: 20px;
         margin-bottom: 5px;
     }
+    /* .cityInput{
+        padding: 10px;
+        font-size: 2rem;
+        font-weight: bold;
+        width: 300px
+    } */
     
 }
 @media screen and (min-width: 1000px) {
@@ -98,5 +104,10 @@
         grid-template-columns: repeat(2, 1fr);
         /* column-gap: 10px; */
     }
-    
+    .weatherForm {
+        max-width: 500px;
+    }
+    .weatherCard {
+        max-width: 500px;
+    }
 }

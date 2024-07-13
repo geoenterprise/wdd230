@@ -76,22 +76,32 @@
                     <li>Meet with our members<a href="#">Read More</a></li>
                 </ul>
             </section>
-            <section>
-                <h2>Weather</h2>
-                <p>Weather: <span id="weather-info">Loading...</span></p>
-                <p>Number of visits: <span id="visit-count">Loading...</span></p>
+            <section id="weatherSection">
+                <form class="weatherForm">
+                    <input type="text" class="cityInput" placeholder="Enter city">
+                    <button class="weatherButton" type="submit">Get Weather</button>
+                </form>
+                
+                <div class="weatherCard">
+                    <h1 class="cityDisplay">City Name</h1>
+                    <p class="tempDisplay">Temp</p>
+                    <p class="humidity">Humidity</p>
+                    <p class="descDisplay">Description</p>
+                    <p class="weatherEmoji">🌤</p>
+                    <p class="errorDisplay" style="display: none;">Please enter a city</p>
+                </div>
             </section>
         </div>
         <div class="card2">
-            <section>
+            <section id="member1" class="member-section">
                 <h2>First Company</h2>
                 <p>Our main member</p>
             </section>
-            <section>
+            <section id="member2" class="member-section">
                 <h2>Second Company</h2>
                 <p>Our main member</p>
             </section>
-            <section>
+            <section id="member3" class="member-section">
                 <h2>Third Company</h2>
                 <p>Our main member</p>
             </section>
@@ -102,5 +112,7 @@
     <script src="scripts/getDates.js"></script>
     <script src="scripts/slideshow.js"></script>
     <script src="scripts/HamMenu.js"></script>
+    <script src="scripts/weatherapp.js"></script>
+    <script src="scripts/members.js"></script>
 </body>
 </html>
