@@ -3,9 +3,9 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-/* :root {
-    background-color: #333;
-} */
+:root {
+    --zebra: hsl(0, 0%, 93%, 1);
+}
 ::selection {
     color: rgb(73, 41, 255);
     background: rgb(63, 253, 149);
@@ -195,19 +195,6 @@ to {opacity: 1}
 /* -------------------------------------
 End SlideShow
 ---------------------------------------- */
-/* #join {
-    display: grid;
-    grid-column: 1/4;
-}
-.join{
-    grid-column: 1/2;
-}
-.join-box {
-    grid-column: 2/3;
-}
-.join-alt {
-    grid-column: 3/4;
-} */
 
 .card {
     margin: 1rem 2rem;
@@ -527,57 +514,69 @@ p {
     text-align: center;
     margin-bottom: 20px;
 }
+
 #grid::before {
     content: '🧮';
 }
 #list::before {
     content: '📜';
 }
-#businessCards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+#businessCards.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    padding: 10px;
+    vertical-align: middle;
 }
 
-#businessCards.grid .card {
-    flex: 1 1 calc(33.333% - 40px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    transition: transform 0.2s;
+#businessCards.list {
+    display: block;
 }
 
-#businessCards.list .card {
-    flex: 1 1 100%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    transition: transform 0.2s;
+.bcard {
+    border: 3px solid hsl(0, 0%, 0%);
+    padding: 10px;
+    background-color: #85989c;
+    text-align: center;
 }
 
-/* .card img {
+.bcard img {
     max-width: 100%;
     height: auto;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.bcard a {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    display: block;
+}   
+.list .bcard {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+    vertical-align: middle;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.list .bcard h2{
+	padding: 0.25rem;
+    font-size: large;
+    vertical-align: middle;
+}
+.list .bcard p{
+	padding: 0.25rem;
+    font-size: medium;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.list .bcard img {
+    display: none; /* Hide logo in list view */
 }
 
-.card h2 {
-    margin: 10px 0;
+.list .bcard:nth-child(even) {
+	background-color: var(--zebra);
 }
-
-.card p,
-.card a {
-    margin: 5px 0;
-}
-
-.error {
-    color: red;
-    text-align: center;
-    font-weight: bold;
-} */
-
-
 
 
 /*-----------End BusinessCard----------*/

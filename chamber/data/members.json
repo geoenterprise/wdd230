@@ -23,7 +23,7 @@
             "address": "Bogotá, Colombia",
             "phone_number": "+57 1 345 6789",
             "website": "https://www.colombiagames.com",
-            "logo": "images/colGamesSegura.png",
+            "logo": "images/colGamesSegura.webp",
             "membLevel": "Bronze",
             "info": "https://www.colombiagames.com"
         },
@@ -32,7 +32,7 @@
             "address": "Bogotá, Colombia",
             "phone_number": "+57 1 123 4567",
             "website": "https://www.efectostudios.com",
-            "logo": "images/EfectoStudios_Logo.png",
+            "logo": "images/EfectoStudios_Logo.webp",
             "membLevel": "Gold",
             "info": "https://www.efectostudios.com"
         },
@@ -41,7 +41,7 @@
             "address": "Barranquilla, Colombia",
             "phone_number": "+57 5 123 4567",
             "website": "https://www.blazingsoft.com",
-            "logo": "images/white-logo.png",
+            "logo": "images/white-logo.webp",
             "membLevel": "Silver",
             "info": "https://www.blazingsoft.com"
         },
@@ -50,7 +50,7 @@
             "address": "Medellin, Colombia",
             "phone_number": "+57 4 987 6543",
             "website": "https://www.bwstudios.co",
-            "logo": "images/Logo_BWstudios_site.png",
+            "logo": "images/Logo_BWstudios_site.webp",
             "membLevel": "Bronze",
             "info": "https://www.bwstudios.co"
         },
@@ -59,7 +59,7 @@
             "address": "Bogotá, Colombia",
             "phone_number": "+57 1 765 4321",
             "website": "https://www.cocodrilodog.com",
-            "logo": "images/CD_logo.png",
+            "logo": "images/CD_logo.webp",
             "membLevel": "Gold",
             "info": "https://www.cocodrilodog.com"
         }

@@ -27,7 +27,7 @@ apiFetch();
 
 function displayResults(data) {
     
-    
+    weatherIcon.innerHTML = "";
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     let desc = data.weather[0].description;    
     // weatherIcon.setAttribute('src', iconsrc);

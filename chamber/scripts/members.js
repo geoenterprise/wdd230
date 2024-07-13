@@ -1,8 +1,8 @@
-const businessCards = document.getElementById("businessCards");
+const businessCards = document.querySelector("#businessCards");
 const gridButton = document.querySelector("#grid");
 const listButton = document.querySelector("#list");
 // const apiKey = "63d4f4ae7dbaca29780e9220b1b3011f";
-
+const jsonsrc = "data/members.json";
 gridButton.addEventListener("click", () => {
         // example using arrow function
     businessCards.classList.add("grid");
@@ -14,26 +14,27 @@ listButton.addEventListener("click", () => {
 });
    
 async function getBusinessInfo(){
-
-    const jsonsrc = "data/members.json";
-    const response = await fetch(jsonsrc);
-
-    console.log(response);
-
-    if(!response.ok){
-        throw new Error("Could not fetch members data");
-    }
-
-    return await response.json();
+    try {
+        const response = await fetch(jsonsrc);
+        if (response.ok) {
+          const data = await response.json();
+          // console.log(data); // testing only
+          displayBusinessInfo(data)
+        } else {
+            throw new Error("Could not fetch members data");
+        }
+      } catch (error) {
+          console.log(error);
+      }    
 
 }
 function displayBusinessInfo(data){
 
-    businessCards.textContent = "";
+    businessCards.innerHTML = "";
 
     data.members.forEach(member => {
-        const card = document.createElement("div");
-        card.classList.add("card");
+        const bcard = document.createElement("div");
+        bcard.classList.add("bcard");
 
         const logoDisplay = document.createElement("img");
         logoDisplay.src = member.logo;
@@ -43,30 +44,30 @@ function displayBusinessInfo(data){
         nameDisplay.textContent = member.name;
 
         const addressDisplay = document.createElement("p");
-        addressDisplay.textContent = `Address: ${member.address}`;
+        addressDisplay.textContent = member.address;
 
         const phoneDisplay = document.createElement("p");
-        phoneDisplay.textContent = `Phone: ${member.phone_number}`;
+        phoneDisplay.textContent = member.phone_number;
 
         const websiteDisplay = document.createElement("a");
         websiteDisplay.href = member.website;
         websiteDisplay.textContent = member.website;
 
-        // const firstMember = data.members[0];
-        // console.log(firstMember.logo); 
+        const firstMember = data.members[0];
+        console.log(firstMember.logo); 
 
-        card.appendChild(logoDisplay);
-        card.appendChild(nameDisplay);
-        card.appendChild(addressDisplay);
-        card.appendChild(phoneDisplay);
-        card.appendChild(websiteDisplay);
+        bcard.appendChild(logoDisplay);
+        bcard.appendChild(nameDisplay);
+        bcard.appendChild(addressDisplay);
+        bcard.appendChild(phoneDisplay);
+        bcard.appendChild(websiteDisplay);
 
-        businessCards.appendChild(card);
+        businessCards.appendChild(bcard);
     });
 }
 
 function displayError(message) {
-        businessCards.textContent = ""; // Clear previous content
+        // businessCards.textContent = ""; // Clear previous content
 
         const errorDisplay = document.createElement("p");
         errorDisplay.textContent = message;
