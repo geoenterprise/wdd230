@@ -37,7 +37,7 @@ header {
 }
 
 #menu.open::before {
-    content: "⭐";
+    content: "❌";
 }
 #hero-msg h4{
     color: #90E0EF;
@@ -73,9 +73,9 @@ header {
     display: block;
 }
 
-.active::before {
+/* .active::before {
     content: "📍";  /* just a wayfinding symbol for the user */
-}
+/* } */
 /* Slideshow container */
 .slideshow-container {
     /* display: flex; */
@@ -432,14 +432,20 @@ End SlideShow
 
 /* ---------------------------------*/
 /* -------- Weather App ---------*/
-
+#weatherSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(180deg, hsl(210, 100%, 75%), hsl(40, 100%, 75%));
+    width: 100%;
+    box-sizing: border-box;
+}
 .weatherForm {
-    /* margin: 20px; */
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: hsl(210, 100%, 75%);
     max-width: 300px;
 }
 .cityInput{
@@ -465,23 +471,13 @@ End SlideShow
     background-color: hsl(122, 66%, 66%);
 }
 .weatherCard {
-    /* border: none; */
-    background: linear-gradient(180deg, hsl(210, 100%, 75%), hsl(40, 100%, 75%));
     padding: 50px;
     max-width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-/* h1 {
-    font-size: 3.5rem;
-    margin-top: 0;
-    margin-bottom: 25px;
-}
-p {
-    font-size: 1.5rem;
-    margin: 5px 0;
-} */
+
 .cityDisplay {
     font-size: 1.5rem;
     font-weight: bold;
