@@ -60,9 +60,13 @@ header {
   text-align: center;
   color: var(--headline-color-on-color);
   background-color: var(--paragraph-background-color);
+  max-height: fit-content;
 }
 header > h1, header > h2 {
   color: var(--headline-color-on-color);
+}
+header h1 {
+  max-width: fit-content;
 }
 p {
   font-family: var(--paragraph-font);

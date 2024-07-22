@@ -37,6 +37,7 @@ async function getWeatherData(city){
     }
 
     return await response.json();
+    displayForecast(data)
 
 }
 function displayWeatherInfo(data){
@@ -93,6 +94,31 @@ function getWeatherEmoji(weatherId){
             return "❓";
     }
 
+}
+function displayForecast(data) {
+    const forecastContainer = document.querySelector('.forecast');
+    forecastContainer.innerHTML = ""; // Clear existing forecast
+
+    // Filter data to get the forecast for the next 3 days (every 24 hours)
+    const forecast = data.list.filter((item, index) => index % 8 === 0).slice(0, 3);
+
+    forecast.forEach(day => {
+        const date = new Date(day.dt * 1000);
+        const dayItem = document.createElement('div');
+        dayItem.classList.add('forecast-item');
+
+        const icon = document.createElement('img');
+        icon.src = `https://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png`;
+        icon.alt = day.weather[0].description;
+
+        const temp = document.createElement('span');
+        temp.textContent = `${date.toDateString()}: ${day.main.temp}°C`;
+
+        dayItem.appendChild(icon);
+        dayItem.appendChild(temp);
+
+        forecastContainer.appendChild(dayItem);
+    });
 }
 function displayError(message){
 

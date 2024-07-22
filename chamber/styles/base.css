@@ -584,6 +584,41 @@ End SlideShow
 
 /*-----------End BusinessCard----------*/
 /*-------------------------------------*/
+.highlighted {
+    border: 2px solid gold;
+    background-color: #fffbcc;
+    max-height: fit-content;
+    
+}
+.member-section {
+    margin: 10px;
+}
+.member-section img {
+    max-width: 100%;
+    padding: 10px;
+}
+.banner {
+    display: none;
+    background-color: yellow;
+    padding: 10px;
+    margin: 10px 10px;
+    border: 1px solid black;
+    position: relative;
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgb(3, 14, 114);
+    box-shadow: 5px 5px 4px #999;
+}
+
+#closeBanner {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
 footer {
     background-color: #000;
     color: #fff;

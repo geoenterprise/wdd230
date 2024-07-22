@@ -7,7 +7,8 @@
             "website": "https://www.g-a-d-s.com",
             "logo": "images/cropped-GADS_Logo-1.webp",
             "membLevel": "Gold",
-            "info": "https://www.g-a-d-s.com"
+            "info": "https://www.g-a-d-s.com",
+            "ad": "images/adGads.webp"
         },
         {
             "name": "MadBricks",
@@ -16,7 +17,8 @@
             "website": "https://www.madbricks.co",
             "logo": "images/MB_Logo_edited.webp",
             "membLevel": "Silver",
-            "info": "https://www.madbricks.co"
+            "info": "https://www.madbricks.co",
+            "ad": "images/adMadBricks.webp"
         },
         {
             "name": "Colombia Games",
@@ -25,7 +27,8 @@
             "website": "https://www.colombiagames.com",
             "logo": "images/colGamesSegura.webp",
             "membLevel": "Bronze",
-            "info": "https://www.colombiagames.com"
+            "info": "https://www.colombiagames.com",
+            "ad": "images/"
         },
         {
             "name": "Efecto Studios",
@@ -34,7 +37,8 @@
             "website": "https://www.efectostudios.com",
             "logo": "images/EfectoStudios_Logo.webp",
             "membLevel": "Gold",
-            "info": "https://www.efectostudios.com"
+            "info": "https://www.efectostudios.com",
+            "ad": "images/adEfectoStudios.webp"
         },
         {
             "name": "Blazing Soft",
@@ -43,7 +47,8 @@
             "website": "https://www.blazingsoft.com",
             "logo": "images/white-logo.webp",
             "membLevel": "Silver",
-            "info": "https://www.blazingsoft.com"
+            "info": "https://www.blazingsoft.com",
+            "ad": "images/adBlazingSoft.webp"
         },
         {
             "name": "BWstudios",
@@ -52,7 +57,8 @@
             "website": "https://www.bwstudios.co",
             "logo": "images/Logo_BWstudios_site.webp",
             "membLevel": "Bronze",
-            "info": "https://www.bwstudios.co"
+            "info": "https://www.bwstudios.co",
+            "ad": "images/"
         },
         {
             "name": "Cocodrilo Dog Games",
@@ -61,7 +67,8 @@
             "website": "https://www.cocodrilodog.com",
             "logo": "images/CD_logo.webp",
             "membLevel": "Gold",
-            "info": "https://www.cocodrilodog.com"
+            "info": "https://www.cocodrilodog.com",
+            "ad": "images/adCocodrilo.webp"
         }
     ]
 }
