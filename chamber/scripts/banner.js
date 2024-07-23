@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const today = new Date().getDay();
 
     // Show banner on Monday (1), Tuesday (2), and Wednesday (3)
-    if (today === 1 || today === 2 || today === 6) {
+    if (today === 1 || today === 2 || today === 3) {
         banner.style.display = 'block';
     }
 
