@@ -34,7 +34,7 @@
         
     <main>
         <form method="get" action="thankyou.html" class="join">
-            <fieldset>
+            <fieldset class="userInfo">
                 <legend>Applicant Information</legend>
                 <label>First Name* <input type="text" name="fname" id= "fname" required></label>
                 <label>Last Name* <input type="text" name="lname" id= "lname" required></label>
@@ -42,63 +42,75 @@
                 <label>Email* <input type="email" title="Please enter a valid email address" name="email" id="email" pattern="[a-zA-Z0-9._%+-]" placeholder="someone@gmail.com" required></label>
                 <label>Phone* <input type="tel" name="phone" id="phone" placeholder="1235551234" required></label>
             </fieldset>
-            <fieldset>
+            <fieldset class="businessInfo">
                 <legend>Business Information</legend>
                 <label>Business/Organization's Name* <input type="text" name="bname" id="bname" required></label>
                 <label>Organization's Description <input type="text" name="bdescription" id= "bdescription"></label>
                 <input type="hidden" id="timestamp" name="timestamp">
             </fieldset>
             
-            <fieldset>
+            <fieldset class="pricing">
                 <legend>Membership</legend>
                 <div id="membership">
-                    <div id="memlevel">Membership Level
+                    <!-- <div id="memlevel">Membership Level
                         <label><input type="radio" name="membership" value="NP"> NP Membership</label>
                         <label><input type="radio" name="membership" value="Bronze"> Bronze Membership</label>
                         <label><input type="radio" name="membership" value="Silver"> Silver Membership</label>
                         <label><input type="radio" name="membership" value="Gold"> Gold Membership</label>
-                    </div>
+                    </div> -->
                     <div id="benefits">Membership Benefits
                         <ul>
                             <li class="benefits">
-                                <h1><strong>NP Membership:</strong></h1>
-                                <h2>For non-profit organizations. No fee.</h2>
-                                <ul>
-                                    <li class="benefitslist">Access to all free events</li>
-                                    <li class="benefitslist">Basic training sessions</li>
-                                </ul>
-                                <span class="price">Free</span>
+                                <label class="membership-label">
+                                    <input type="radio" name="membership" value="NP">
+                                    <h1><strong>NP Membership:</strong></h1>
+                                    <h2>For non-profit organizations. No fee.</h2>
+                                    <ul>
+                                        <li class="benefitslist">Access to all free events</li>
+                                        <li class="benefitslist">Basic training sessions</li>
+                                    </ul>                                
+                                    <span class="price">Free</span>
+                                </label>
                             </li>
                             <li class="benefits">
-                                <h1><strong>Bronze Membership:</strong></h1>
-                                <ul>
-                                    <li class="benefitslist">Access to special events</li>
-                                    <li class="benefitslist">Basic training sessions</li>
-                                    <li class="benefitslist">Advertising options (basic placement)</li>
-                                    <li class="benefitslist">5% event discounts</li>
-                                </ul>
-                                <span class="price">$50/year</span>
+                                <label class="membership-label">
+                                    <input type="radio" name="membership" value="Bronze">
+                                    <h1><strong>Bronze Membership:</strong></h1>
+                                    <ul>
+                                        <li class="benefitslist">Access to special events</li>
+                                        <li class="benefitslist">Basic training sessions</li>
+                                        <li class="benefitslist">Advertising options (basic placement)</li>
+                                        <li class="benefitslist">5% event discounts</li>
+                                    </ul>
+                                    <span class="price">$50/year</span>
+                                </label>
                             </li>
                             <li class="benefits">
-                                <h1><strong>Silver Membership:</strong></h1> 
-                                <ul>
-                                    <li class="benefitslist">All Bronze benefits</li>
-                                    <li class="benefitslist">Advanced training sessions</li>
-                                    <li class="benefitslist">Priority advertising (better placement)</li>
-                                    <li class="benefitslist">10% event discounts</li>
-                                </ul>
-                                <span class="price">$100/year</span>
+                                <label class="membership-label">
+                                    <input type="radio" name="membership" value="Silver">
+                                    <h1><strong>Silver Membership:</strong></h1> 
+                                    <ul>
+                                        <li class="benefitslist">All Bronze benefits</li>
+                                        <li class="benefitslist">Advanced training sessions</li>
+                                        <li class="benefitslist">Priority advertising (better placement)</li>
+                                        <li class="benefitslist">10% event discounts</li>
+                                    </ul>
+                                    <span class="price">$100/year</span>
+                                </label>
                             </li>
                             <li class="benefits">
-                                <h1><strong>Gold Membership:</strong></h1>
-                                <ul>
-                                    <li class="benefitslist">All Silver benefits</li>
-                                    <li class="benefitslist">Exclusive events</li>
-                                    <li class="benefitslist">Premium training sessions</li>
-                                    <li class="benefitslist">Top-tier advertising (best placement)</li>
-                                    <li class="benefitslist">15% event discounts</li>
-                                </ul>
-                                <span class="price">$200/year</span>
+                                <label class="membership-label">
+                                    <input type="radio" name="membership" value="Gold">
+                                    <h1><strong>Gold Membership:</strong></h1>
+                                    <ul>
+                                        <li class="benefitslist">All Silver benefits</li>
+                                        <li class="benefitslist">Exclusive events</li>
+                                        <li class="benefitslist">Premium training sessions</li>
+                                        <li class="benefitslist">Top-tier advertising (best placement)</li>
+                                        <li class="benefitslist">15% event discounts</li>
+                                    </ul>
+                                    <span class="price">$200/year</span>
+                                </label>
                             </li>
                         </ul>
                     </div>

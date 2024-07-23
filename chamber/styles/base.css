@@ -72,11 +72,11 @@ header {
 .open a {
     display: block;
 }
+ 
+/* ------------------------------------------------ */
+/* ------------ Slideshow container ------------- */
+/* ------------------------------------------------ */
 
-/* .active::before {
-    content: "📍";  /* just a wayfinding symbol for the user */
-/* } */
-/* Slideshow container */
 .slideshow-container {
     /* display: flex; */
     /* grid-column: 1/4; */
@@ -193,7 +193,7 @@ to {opacity: 1}
     .prev, .next,.text {font-size: 11px}
 }
 /* -------------------------------------
-End SlideShow
+------------End SlideShow---------------
 ---------------------------------------- */
 
 .card {
@@ -299,6 +299,11 @@ End SlideShow
 }
 #visit-message {
     padding: 10px;
+}
+.calendar {
+    width: 100%;
+    border: 1px solid #777;
+    height: 340px;
 }
 /* ----------------------------------------- */
 /* ------------ Form Styling ---------------*/
