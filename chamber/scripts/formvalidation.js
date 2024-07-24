@@ -7,7 +7,7 @@
 //     alert('Please enter at least seven characters, including letters, hyphens, and spaces only.');
 // }
 document.addEventListener('DOMContentLoaded', function() {
-    const form = document.querySelector('.class');
+    const form = document.querySelector('.join');
     form.addEventListener('submit', validatePositionInput);
 });
 
