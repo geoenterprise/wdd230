@@ -3,29 +3,32 @@ const gridButton = document.querySelector("#grid");
 const listButton = document.querySelector("#list");
 // const apiKey = "63d4f4ae7dbaca29780e9220b1b3011f";
 const jsonsrc = "data/members.json";
-gridButton.addEventListener("click", () => {
-        // example using arrow function
-    businessCards.classList.add("grid");
-    businessCards.classList.remove("list");
-});
-listButton.addEventListener("click", () => {
-    businessCards.classList.add("list");
-    businessCards.classList.remove("grid");
-});
-   
+
+if (gridButton && listButton) {
+    gridButton.addEventListener("click", () => {
+            // example using arrow function
+        businessCards.classList.add("grid");
+        businessCards.classList.remove("list");
+    });
+    listButton.addEventListener("click", () => {
+        businessCards.classList.add("list");
+        businessCards.classList.remove("grid");
+    });
+}
+
 async function getBusinessInfo(){
     try {
         const response = await fetch(jsonsrc);
         if (response.ok) {
-          const data = await response.json();
-          // console.log(data); // testing only
-          displayBusinessInfo(data)
+        const data = await response.json();
+        // console.log(data); // testing only
+        displayBusinessInfo(data)
         } else {
             throw new Error("Could not fetch members data");
         }
-      } catch (error) {
-          console.log(error);
-      }    
+    } catch (error) {
+        console.log(error);
+    }    
 
 }
 function displayBusinessInfo(data){
